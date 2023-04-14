@@ -1,0 +1,45 @@
+#本地环境
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: greywind_blog
+
+
+  datasource:
+    url : jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=Asia/Shanghai
+    username : root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+  servlet:
+    multipart:
+      max-request-size: 20MB
+      max-file-size: 2MB
+
+
+
+#mybatis-puls
+mybatis-plus:
+  configuration:
+    log-impl : org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix : ms_
+
+
+
+#七牛云
+qiniu:
+  accesskey: h7FwOZdGLQU9tbCmN4c98-3GIgPRLavFbrXcphJX
+  accessSecretKey: YsxLH-tjPFRQwutW_H-0MVac6zWP9PO5CD4xc4_j
+
+
+rocketmq:
+  name-server: 116.205.185.106:9876
+  producer:
+    group: blog_group
