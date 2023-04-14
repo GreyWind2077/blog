@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "qiniu",
+      "type": "com.greywind.blog.utils.QiniuUtils",
+      "sourceType": "com.greywind.blog.utils.QiniuUtils"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
